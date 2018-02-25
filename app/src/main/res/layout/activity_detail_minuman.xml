@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.modul3_azkya.detail_minuman">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageViewdetail"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                app:srcCompat="@drawable/ades" />
+
+            <TextView
+                android:id="@+id/textView_nama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="150dp"
+                android:text="TextView"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="200dp"
+                android:text="TextView" />
+
+
+            <ImageView
+                android:id="@+id/battery"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_below="@+id/desc"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="41dp"
+                android:src="@drawable/drawable_list" />
+
+            <TextView
+
+                android:id="@+id/liter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/btnplus"
+                android:layout_marginLeft="44dp"
+                android:layout_marginStart="44dp"
+                android:layout_toEndOf="@+id/btnplus"
+                android:layout_toRightOf="@+id/btnplus"
+                android:textSize="30dp" />
+
+            <Button
+                android:id="@+id/btnplus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/btnminus"
+                android:layout_alignBottom="@+id/btnminus"
+                android:layout_alignLeft="@+id/desc"
+                android:layout_alignStart="@+id/desc"
+                android:layout_marginLeft="35dp"
+                android:layout_marginStart="35dp"
+                android:text="+" />
+
+            <TextView
+                android:id="@+id/jumlah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/liter"
+                android:layout_alignBottom="@+id/liter"
+                android:layout_alignLeft="@+id/liter"
+                android:layout_alignStart="@+id/liter"
+                android:text="1"
+                android:textSize="30dp" />
+
+            <Button
+                android:id="@+id/btnminus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/battery"
+                android:layout_marginLeft="22dp"
+                android:layout_marginStart="22dp"
+                android:layout_toEndOf="@+id/jumlah"
+                android:layout_toRightOf="@+id/jumlah"
+                android:text="-" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
